@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px]`}>
-        {children}
         <div className='bg-[#fbe2e3] relative top-[-6rem] z-10 right-
         [11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]
         sm:w-[68.75rem]'
@@ -29,7 +28,7 @@ export default function RootLayout({
         xl:left-[-15rem] 2xl: left-[-5rem]'
         ></div>
         <Header/>
-
+        {children}
         </body>
     </html>
   )
